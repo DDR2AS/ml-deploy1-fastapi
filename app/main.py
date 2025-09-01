@@ -6,7 +6,6 @@ import pickle
 app = FastAPI()
 model_predict = pickle.load(open("app/train-model/model.pkl", "rb"))
 
-
 class Model(BaseModel):
     age_experience: float
 
